@@ -1,0 +1,52 @@
+<Effect matchname="Pseudo/MO Park Controls" name="MO Park Controls">
+  <Group name="In">
+    <Checkbox name="In Enabled" default="true"/>
+    <Group name="Timing">
+      <Slider name="In Duration Frames" default="30" valid_min="1" valid_max="1000"/>
+      <Slider name="In Ease" default="100" valid_min="-100" valid_max="100" DISPLAY_PERCENT="true"/>
+    </Group>
+    <Group name="Position">
+      <Checkbox name="In Position Enabled" default="true"/>
+      <Slider name="In Direction" default="1" valid_min="1" valid_max="5"/>
+      <Slider name="In Distance" default="100" valid_min="0" valid_max="10000"/>
+    </Group>
+    <Group name="Scale">
+      <Checkbox name="In Scale Enabled" default="false"/>
+      <Slider name="In Scale From" default="80" valid_min="0" valid_max="1000" DISPLAY_PERCENT="true"/>
+    </Group>
+    <Group name="Opacity">
+      <Checkbox name="In Opacity Enabled" default="false"/>
+    </Group>
+  </Group>
+  <Group name="Continuous">
+    <Checkbox name="Continuous Enabled" default="false"/>
+    <Group name="Position">
+      <Checkbox name="Continuous Position Enabled" default="false"/>
+      <Slider name="Continuous Direction" default="4" valid_min="1" valid_max="4"/>
+      <Slider name="Continuous Position Speed" default="20" valid_min="-5000" valid_max="5000"/>
+    </Group>
+    <Group name="Scale">
+      <Checkbox name="Continuous Scale Enabled" default="false"/>
+      <Slider name="Continuous Scale Speed" default="5" valid_min="-500" valid_max="500"/>
+    </Group>
+  </Group>
+  <Group name="Out">
+    <Checkbox name="Out Enabled" default="false"/>
+    <Group name="Timing">
+      <Slider name="Out Duration Frames" default="30" valid_min="1" valid_max="1000"/>
+      <Slider name="Out Ease" default="-100" valid_min="-100" valid_max="100" DISPLAY_PERCENT="true"/>
+    </Group>
+    <Group name="Position">
+      <Checkbox name="Out Position Enabled" default="true"/>
+      <Slider name="Out Direction" default="1" valid_min="1" valid_max="5"/>
+      <Slider name="Out Distance" default="100" valid_min="0" valid_max="10000"/>
+    </Group>
+    <Group name="Scale">
+      <Checkbox name="Out Scale Enabled" default="false"/>
+      <Slider name="Out Scale To" default="80" valid_min="0" valid_max="1000" DISPLAY_PERCENT="true"/>
+    </Group>
+    <Group name="Opacity">
+      <Checkbox name="Out Opacity Enabled" default="false"/>
+    </Group>
+  </Group>
+</Effect>
